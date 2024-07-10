@@ -16,18 +16,19 @@ public class EndingScript : MonoBehaviour
     #endregion
     public MouseAndDartManager MaDmanager;
     public int publicScore;
-    int howManyDartsThrown;
+    //int howManyDartsThrown;
     public GameObject[] endings;
-    int index;
+    //int index;
     public TextMeshProUGUI scoreText1;
     public TextMeshProUGUI scoreText2;
     public TextMeshProUGUI scoreText3;
     public TextMeshProUGUI scoreText4;
     public Button playAgain;
     public Button backToMenu;
-    float counter;
-    float maxTime = 2;
+    //float counter;
+    //float maxTime = 2;
     [SerializeField] InputManager inputManager;
+    [SerializeField] ScoreText scoreText;
     public void IfEndingConditionsAreMet(int throwCount, int score)
     {
         publicScore = score;
@@ -40,6 +41,7 @@ public class EndingScript : MonoBehaviour
     {
         GameObject[] darts = GameObject.FindGameObjectsWithTag("Dart");
         yield return new WaitForSeconds(1.5f);
+        scoreText.GetComponent<ScoreText>().scoreText.enabled = false;
         for (int i = 0; i < darts.Length; i++)
             Destroy(darts[i]);
         playAgain.gameObject.SetActive(true);
