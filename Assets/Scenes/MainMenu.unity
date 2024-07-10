@@ -269,7 +269,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Automatiskt. Kaststyrkan best\xE4ms automatiskt."
+  m_text: "Automaattinen. Heiton voimakkuus m\xE4\xE4r\xE4ytyy automaattisesti."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -404,8 +404,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nu \xE4r det dags att skapa sommarst\xE4mning vid stugan och ha en pilkastningst\xE4vling.
-    St\xE4ll f\xF6rst in siktet och kaststyrkan."
+  m_text: "Nyt on aika viritt\xE4yty\xE4 m\xF6kkitunnelmaan ja ottaa tikkakilpailu.
+    Valitse ensin heiton t\xE4ht\xE4ystapa ja heiton voimakkuus."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -606,8 +606,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 307.29, y: -128.46411}
-  m_SizeDelta: {x: 565.23, y: 72.1083}
+  m_AnchoredPosition: {x: 304.15533, y: -128.46411}
+  m_SizeDelta: {x: 558.9681, y: 72.1083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &162317680
 MonoBehaviour:
@@ -629,8 +629,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Manuell. Du kan justera kaststyrkan sj\xE4lv genom att h\xE5lla in musen
-    eller tangenten."
+  m_text: "Itse s\xE4\xE4dett\xE4v\xE4. Voit s\xE4\xE4t\xE4\xE4 heiton voimakuutta
+    itse, kun pid\xE4t painiketta pohjassa pitk\xE4\xE4n."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -809,10 +809,6 @@ PrefabInstance:
       propertyPath: cursor
       value: 
       objectReference: {fileID: 1103850085}
-    - target: {fileID: 258750990, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 295659393, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
       propertyPath: cursor
       value: 
@@ -821,43 +817,10 @@ PrefabInstance:
       propertyPath: inputManager
       value: 
       objectReference: {fileID: 1448053429}
-    - target: {fileID: 402875947, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 8.9774
-      objectReference: {fileID: 0}
-    - target: {fileID: 402875947, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 4.4887
-      objectReference: {fileID: 0}
-    - target: {fileID: 402875948, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
-      propertyPath: m_text
-      value: Skapare
-      objectReference: {fileID: 0}
-    - target: {fileID: 1229093726, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 354.281
-      objectReference: {fileID: 0}
-    - target: {fileID: 1229093726, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -304.8595
-      objectReference: {fileID: 0}
-    - target: {fileID: 1229093727, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
-      propertyPath: m_text
-      value: Instruktioner
-      objectReference: {fileID: 0}
     - target: {fileID: 1360217990, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
       propertyPath: cursor
       value: 
       objectReference: {fileID: 1103850085}
-    - target: {fileID: 1865885503, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
-      propertyPath: m_text
-      value: "Samla s\xE5 m\xE5nga po\xE4ng som m\xF6jligt p\xE5 fem kast. Du kan
-        spela med musen eller tangenterna. \r\n\r\nP\xE5 spelets startsida kan du
-        v\xE4lja sikte och kaststyrka. Under spelets g\xE5ng ser du din po\xE4ngsumma
-        uppe i v\xE4nstra h\xF6rnet. Nere till v\xE4nster ser du hur m\xE5nga kast
-        du har kvar.\r\n\r\nN\xE4r spelet \xE4r slut kan du spela samma spel igen
-        eller \xE5terv\xE4nda till startsidan f\xF6r att \xE4ndra dina val. \r\n\n"
-      objectReference: {fileID: 0}
     - target: {fileID: 2065395025, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
       propertyPath: cursor
       value: 
@@ -1612,7 +1575,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Med musen. Kasthanden r\xF6r sig p\xE5 piltavlan n\xE4r du r\xF6r musen."
+  m_text: "Hiirell\xE4. Heittok\xE4si liikkuu tikkataulussa, kun liikutat hiirt\xE4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -2334,8 +2297,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -290.01492, y: -27.370115}
-  m_SizeDelta: {x: 451.2978, y: 81.9202}
+  m_AnchoredPosition: {x: -296, y: -11.409992}
+  m_SizeDelta: {x: 439.3277, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072452931
 MonoBehaviour:
@@ -2357,8 +2320,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Automatiskt. Kasthanden r\xF6r sig automatiskt och pilen kastas n\xE4r
-    du trycker p\xE5 musen eller tangenten."
+  m_text: "Automaattinen. Heittok\xE4si liikkuu automaattisesti ja pys\xE4htyy, kun
+    aloitat heiton."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -2561,7 +2524,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sikte
+  m_text: "Heiton t\xE4ht\xE4ys"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -2744,7 +2707,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kaststyrka
+  m_text: Heiton voimakkuus
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -3117,7 +3080,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kasta pil! '
+  m_text: "Heit\xE4 tikkaa!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
