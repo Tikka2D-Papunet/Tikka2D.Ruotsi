@@ -65,5 +65,6 @@ public class EndingScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         inputManager.GetComponent<InputManager>().isEndingMenuOpen = true;
         inputManager.GetComponent<InputManager>().SelectFirstButton();
+        inputManager.GetComponent<InputManager>().SelectPlayAgainButton();
     }
 }

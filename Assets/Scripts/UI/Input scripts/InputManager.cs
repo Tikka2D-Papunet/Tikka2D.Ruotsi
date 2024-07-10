@@ -32,6 +32,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] ButtonA exitButton;
     [SerializeField] GuideAudioButton guideAudioButton;
     [SerializeField] CloseGuideScreenButton closeGuideScreenButton;
+    [SerializeField] ButtonB playAgainButton;
     public bool keyboardInput;
     private void Start()
     {
@@ -43,6 +44,8 @@ public class InputManager : MonoBehaviour
         exitButton.GetComponent<ButtonA>();
         guideAudioButton.GetComponent<GuideAudioButton>();
         closeGuideScreenButton.GetComponent<CloseGuideScreenButton>();
+        if (playAgainButton != null)
+            playAgainButton.GetComponent<ButtonB>();
         string sceneName = SceneManager.GetActiveScene().name;
         if (sceneName == "MainMenu")
         {
@@ -81,6 +84,10 @@ public class InputManager : MonoBehaviour
                 currentButtonIndex = 0;
             EventSystem.current.SetSelectedGameObject(guideButtons[currentButtonIndex].gameObject);
         }
+    }
+    public void SelectPlayAgainButton()
+    {
+        playAgainButton.blackBG.SetActive(true);
     }
     public void AgainButtonFunction()
     {
