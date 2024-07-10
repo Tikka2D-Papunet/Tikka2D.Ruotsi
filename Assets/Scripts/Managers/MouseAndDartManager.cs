@@ -134,7 +134,7 @@ public class MouseAndDartManager : MonoBehaviour
                 ScoreAndSpawnStar(2);
             else if (distance > 4.363f && distance < 4.851f)
                 ScoreAndSpawnStar(1);
-            scoreText.text = score + " pistettä";
+            scoreText.text = score + " poäng";
         }
         else
             SoundManager.Instance.PlaySound(throwPastSound);
