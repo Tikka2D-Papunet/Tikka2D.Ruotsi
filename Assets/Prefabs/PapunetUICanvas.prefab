@@ -609,8 +609,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 4.4887, y: 0}
+  m_SizeDelta: {x: 8.9774, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &402875949
 CanvasRenderer:
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tekij\xE4t"
+  m_text: Skapare
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -747,8 +747,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 429.99988, y: -172.99994}
-  m_SizeDelta: {x: 152.0626, y: 74.0378}
+  m_AnchoredPosition: {x: 432, y: -171.99995}
+  m_SizeDelta: {x: 145.7615, y: 70.9699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &772443639
 CanvasRenderer:
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3331ad37ee718d64d9007628fb39843c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d59adbd9c7abb740b535d6beb81c545, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -897,8 +897,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 394.00012, y: 175}
-  m_SizeDelta: {x: 228.8235, y: 74.3676}
+  m_AnchoredPosition: {x: 396.00015, y: 174}
+  m_SizeDelta: {x: 224.6851, y: 73.0226}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &826690837
 CanvasRenderer:
@@ -928,7 +928,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 11ff4024a0b5b1c409215313281497ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f5fb3af7becda6468bfdd193f75ec93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1009,7 +1009,7 @@ MonoBehaviour:
   buttonImage: {fileID: 0}
   originalSprite: {fileID: 0}
   originalBlack: {fileID: 401299045612382167}
-  stopPlaySprite: {fileID: 21300000, guid: 309d03c1bb5ab354684fe9e57924a760, type: 3}
+  stopPlaySprite: {fileID: 21300000, guid: 350b69b0f36f9cc448c57ec633d444a6, type: 3}
   inputManager: {fileID: 0}
   cursor: {fileID: 0}
   guideAudioClip: {fileID: 8300000, guid: 71724ccbd2e33a44da5aad2f3dcafe1d, type: 3}
@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tekij\xE4t"
+  m_text: Skapare
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -1184,8 +1184,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -382, y: 180}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -304.8595, y: 180}
+  m_SizeDelta: {x: 354.281, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1229093728
 CanvasRenderer:
@@ -1215,7 +1215,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ohjeet
+  m_text: Instruktioner
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -1319,8 +1319,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32.693993, y: -4.400006}
-  m_SizeDelta: {x: 511.6053, y: 76.1853}
+  m_AnchoredPosition: {x: -32.693993, y: -11.191}
+  m_SizeDelta: {x: 511.6053, y: 89.767}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1332320724
 CanvasRenderer:
@@ -1350,8 +1350,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tekniikka: Ville Karppinen (Taitotalo)\nGrafiikka: Nea Immonen (Taitotalo)\nAlkuper\xE4inen
-    toteutus: Papunet"
+  m_text: "Teknik: Ville Karppinen (Taitotalo)\nGrafik: Nea Immonen (Taitotalo)\nUrsprungligen
+    genomf\xF6rt av Papunet"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -1457,8 +1457,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 245.8, y: -91}
-  m_SizeDelta: {x: 135.3679, y: 65.9095}
+  m_AnchoredPosition: {x: 248, y: -92}
+  m_SizeDelta: {x: 131.3993, y: 63.9771}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1360217993
 CanvasRenderer:
@@ -1488,7 +1488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3331ad37ee718d64d9007628fb39843c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d59adbd9c7abb740b535d6beb81c545, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1554,7 +1554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1793f83a6e78be8418712f403514f605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: f84aba07fc38be1418915941d5dfd2ba, type: 3}
+  hoverSprite: {fileID: 21300000, guid: 54b00c3ce00290642b4f0b0e4f5f029f, type: 3}
   cursor: {fileID: 0}
   madeByScreen: {fileID: 303878188}
   transparentBG: {fileID: 4699970553242195594}
@@ -1702,12 +1702,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Peliss\xE4 yrit\xE4t saada mahdollisimman suuren pistem\xE4\xE4r\xE4n
-    viidella tikalla. Voit pelata peli\xE4 hiirell\xE4 tai painikkeilla. Pelin aloitussivulla
-    voit valita heiton t\xE4ht\xE4ystavan ja voimakkuuden.\n\nPelin aikana n\xE4et
-    pistem\xE4\xE4r\xE4si vasemmasta yl\xE4kulmasta. Vasemmasta alakulmasta n\xE4et,
-    montako heittoa sinulla on j\xE4ljell\xE4.\n\nKun peli p\xE4\xE4ttyy, voit pelata
-    uuden samanlaisen pelin tai palata takaisin aloitussivulle vaihtamaan valintojasi.\n"
+  m_text: "Samla s\xE5 m\xE5nga po\xE4ng som m\xF6jligt p\xE5 fem kast. Du kan spela
+    med musen eller tangenterna. \r\n\r\nP\xE5 spelets startsida kan du v\xE4lja
+    sikte och kaststyrka. Under spelets g\xE5ng ser du din po\xE4ngsumma uppe i v\xE4nstra
+    h\xF6rnet. Nere till v\xE4nster ser du hur m\xE5nga kast du har kvar.\r\n\r\nN\xE4r
+    spelet \xE4r slut kan du spela samma spel igen eller \xE5terv\xE4nda till startsidan
+    f\xF6r att \xE4ndra dina val. \r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
   m_sharedMaterial: {fileID: 7340358882319914615, guid: 1ff81ada8178981459fc209e47525fa5, type: 2}
@@ -1811,8 +1811,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 430, y: -173}
-  m_SizeDelta: {x: 161.1748, y: 83.1503}
+  m_AnchoredPosition: {x: 432, y: -172}
+  m_SizeDelta: {x: 154.4963, y: 79.7048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2043465282
 CanvasRenderer:
@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f84aba07fc38be1418915941d5dfd2ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54b00c3ce00290642b4f0b0e4f5f029f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1887,8 +1887,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 394, y: 175}
-  m_SizeDelta: {x: 237.9763, y: 83.5206}
+  m_AnchoredPosition: {x: 396, y: 174}
+  m_SizeDelta: {x: 233.6725, y: 82.0101}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2186200097702604325
 CanvasRenderer:
@@ -1918,7 +1918,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d21d516cb57386b4890ff7b3cf9dc173, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 104ff4c7071c052428f515d2606f4546, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1963,8 +1963,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 245.80002, y: -91.00001}
-  m_SizeDelta: {x: 143.4799, y: 74.0214}
+  m_AnchoredPosition: {x: 248.00003, y: -92}
+  m_SizeDelta: {x: 139.2732, y: 71.8512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4743086478233557101
 CanvasRenderer:
@@ -1994,7 +1994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f84aba07fc38be1418915941d5dfd2ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54b00c3ce00290642b4f0b0e4f5f029f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
