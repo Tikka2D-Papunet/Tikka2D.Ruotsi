@@ -25,7 +25,7 @@ public class InputManager : MonoBehaviour
     private int currentButtonIndex = 0;
     public bool isEndingMenuOpen;
     public bool canThrow = true;
-    [SerializeField] ButtonA playButton;
+    [SerializeField] ButtonB playButton;
     [SerializeField] GuideButton guideButton;
     [SerializeField] ListenButton listenButton;
     [SerializeField] ButtonA againButton;
@@ -36,8 +36,8 @@ public class InputManager : MonoBehaviour
     public bool keyboardInput;
     private void Start()
     {
-        if(playButton != null)
-            playButton.GetComponent<ButtonA>();
+        if (playButton != null)
+            playButton.GetComponent<ButtonB>();
         guideButton.GetComponent<GuideButton>();
         listenButton.GetComponent<ListenButton>();
         againButton.GetComponent<ButtonA>();
@@ -49,7 +49,7 @@ public class InputManager : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
         if (sceneName == "MainMenu")
         {
-            SelectFirstButton();
+            SelectPlayButton();
             currentInputState = inputMenuState;
         }
         else if (sceneName == "Dart")
@@ -59,9 +59,10 @@ public class InputManager : MonoBehaviour
     {
         currentInputState.UpdateState();
     }
-    public void SelectFirstButton()
+    public void SelectPlayButton()
     {
-        EventSystem.current.SetSelectedGameObject(buttons[0].gameObject);
+        if (playButton.buttonImage != null)
+            EventSystem.current.SetSelectedGameObject(buttons[0].gameObject);
     }
     public void SelectSecondGuideButton()
     {
@@ -87,11 +88,8 @@ public class InputManager : MonoBehaviour
     }
     public void SelectPlayAgainButton()
     {
-        playAgainButton.blackBG.SetActive(true);
-    }
-    public void AgainButtonFunction()
-    {
-        SceneManager.LoadScene(1);
+        EventSystem.current.SetSelectedGameObject(buttons[0].gameObject);
+        playAgainButton.SetButton(playAgainButton.hoverSprite, playAgainButton.hoverSpriteWidth, playAgainButton.hoverSpriteHeight);
     }
     public void QuitGame()
     {

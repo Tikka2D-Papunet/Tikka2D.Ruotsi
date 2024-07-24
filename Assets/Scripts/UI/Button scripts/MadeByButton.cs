@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,7 +10,6 @@ public class MadeByButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     [SerializeField] GameObject madeByScreen;
     [SerializeField] GameObject transparentBG;
     [SerializeField] GameObject guideScreen;
-    [SerializeField] GameObject madeByCloseButtonBlackBG;
     [SerializeField] GuideButton guideButton;
     void Start()
     {
@@ -32,12 +29,11 @@ public class MadeByButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         guideButton.CloseGuideScreen();
         madeByScreen.SetActive(true);
         transparentBG.SetActive(true);
-        madeByCloseButtonBlackBG.SetActive(false);
     }
     public void OnPointerExit(PointerEventData eventData)
     {
         cursor.ChangeCursor(cursor.cursorOriginal);
-        if(!madeByScreen.activeSelf)
+        if (!madeByScreen.activeSelf)
         {
             ButtonTextBackToNormal();
         }
@@ -52,7 +48,6 @@ public class MadeByButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         guideButton.CloseGuideScreen();
         madeByScreen.SetActive(true);
         transparentBG.SetActive(true);
-        madeByCloseButtonBlackBG.SetActive(false);
     }
     public void OnDeselect(BaseEventData eventData)
     {

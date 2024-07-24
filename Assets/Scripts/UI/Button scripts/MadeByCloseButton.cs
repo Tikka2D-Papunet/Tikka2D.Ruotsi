@@ -4,25 +4,37 @@ using UnityEngine.UI;
 public class MadeByCloseButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler, IPointerClickHandler, ISubmitHandler
 {
     Button button;
+    public Image buttonImage;
+    [HideInInspector] public Sprite originalSprite;
     public Sprite hoverSprite;
+    private float originalSpriteWidth;
+    private float originalSpriteHeight;
+    private float hoverSpriteWidth = 139.2732f;
+    private float hoverSpriteHeight = 71.8512f;
     [SerializeField] CursorController cursor;
     [SerializeField] GameObject madeByScreen;
     [SerializeField] GameObject transparentBG;
     [SerializeField] MadeByButton madeByButton;
-    public GameObject hoverImgObj;
     void Start()
     {
         button = GetComponent<Button>();
+        if (buttonImage != null)
+        {
+            buttonImage = button.image;
+            originalSprite = buttonImage.sprite;
+            originalSpriteWidth = buttonImage.rectTransform.rect.width;
+            originalSpriteHeight = buttonImage.rectTransform.rect.height;
+        }
         cursor.GetComponent<CursorController>();
-        if(madeByButton != null)
+        if (madeByButton != null)
             madeByButton.GetComponent<MadeByButton>();
     }
     void Update()
     {
         bool input = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab);
-        if(input)
+        if (input)
         {
-            hoverImgObj.SetActive(false);
+            SetButton(originalSprite, originalSpriteWidth, originalSpriteHeight);
             madeByScreen.SetActive(false);
             transparentBG.SetActive(false);
             madeByButton.ButtonTextBackToNormal();
@@ -31,10 +43,11 @@ public class MadeByCloseButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public void OnPointerEnter(PointerEventData eventData)
     {
         cursor.ChangeCursor(cursor.cursorHover);
-        hoverImgObj.SetActive(true);
+        SetButton(hoverSprite, hoverSpriteWidth, hoverSpriteHeight);
     }
     public void OnPointerClick(PointerEventData eventData)
     {
+        SetButton(originalSprite, originalSpriteWidth, originalSpriteHeight);
         madeByScreen.SetActive(false);
         transparentBG.SetActive(false);
         madeByButton.ButtonTextBackToNormal();
@@ -42,20 +55,30 @@ public class MadeByCloseButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public void OnPointerExit(PointerEventData eventData)
     {
         cursor.ChangeCursor(cursor.cursorOriginal);
-        hoverImgObj.SetActive(false);
+        SetButton(originalSprite, originalSpriteWidth, originalSpriteHeight);
     }
     public void OnSelect(BaseEventData eventData)
     {
-        hoverImgObj.SetActive(true);
+        SetButton(hoverSprite, hoverSpriteWidth, hoverSpriteHeight);
     }
     public void OnSubmit(BaseEventData eventData)
     {
+        SetButton(originalSprite, originalSpriteWidth, originalSpriteHeight);
         madeByScreen.SetActive(false);
         transparentBG.SetActive(false);
         madeByButton.ButtonTextBackToNormal();
     }
     public void OnDeselect(BaseEventData eventData)
     {
-        hoverImgObj.SetActive(false);
+        SetButton(originalSprite, originalSpriteWidth, originalSpriteHeight);
+    }
+    public void SetButton(Sprite sprite, float width, float height)
+    {
+        if (buttonImage != null)
+        {
+            buttonImage.sprite = sprite;
+            RectTransform rectTransform = buttonImage.rectTransform;
+            rectTransform.sizeDelta = new Vector2(width, height);
+        }
     }
 }

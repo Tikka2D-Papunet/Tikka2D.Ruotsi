@@ -317,7 +317,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -404,7 +404,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351d2d372a0bd8d46ae8ee6a82bc0ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackBG: {fileID: 1683335206}
+  buttonImage: {fileID: 0}
+  originalSprite: {fileID: 0}
+  hoverSprite: {fileID: 21300000, guid: a156c5f842f325a49bfe58ad8984636c, type: 3}
+  hoverSpriteWidth: 187.8584
+  hoverSpriteHeight: 46.7819
   inputManager: {fileID: 144892823}
   cursor: {fileID: 1095663229}
 --- !u!1 &121871630
@@ -466,7 +470,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -553,7 +557,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351d2d372a0bd8d46ae8ee6a82bc0ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackBG: {fileID: 370276900}
+  buttonImage: {fileID: 0}
+  originalSprite: {fileID: 0}
+  hoverSprite: {fileID: 21300000, guid: fb912e70b89572f45885fb72ec113ac4, type: 3}
+  hoverSpriteWidth: 225.9
+  hoverSpriteHeight: 45.4642
   inputManager: {fileID: 144892823}
   cursor: {fileID: 1095663229}
 --- !u!1 &123237109
@@ -2945,9 +2953,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1095663229}
     - target: {fileID: 2065395025, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2065395025, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
       propertyPath: inputManager
       value: 
       objectReference: {fileID: 144892823}
+    - target: {fileID: 2133329428, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
+      propertyPath: newButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2356601815760992292, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
       propertyPath: cursor
       value: 
@@ -3009,6 +3025,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 144892823}
     - target: {fileID: 2356601816133096386, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
+      propertyPath: m_Transition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356601816133096386, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
       objectReference: {fileID: 0}
@@ -3030,7 +3050,7 @@ PrefabInstance:
       objectReference: {fileID: 144892823}
     - target: {fileID: 2356601816133096386, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AgainButtonFunction
+      value: GoBackToMainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 2356601816133096390, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
       propertyPath: m_AnchorMax.y
