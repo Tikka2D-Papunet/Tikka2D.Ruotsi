@@ -45,22 +45,22 @@ public class EndingScript : MonoBehaviour
         if (newScore < 25)
         {
             endings[0].SetActive(isActiveAndEnabled);
-            scoreText1.text = "Du fick " + newScore + " pöäng. Bra början! Med lite övning blir du bättre.";
+            scoreText1.text = "Du fick " + newScore + " poäng. Bra början! Med lite övning blir du bättre.";
         }
         else if (newScore >= 25 && newScore < 35)
         {
             endings[1].SetActive(isActiveAndEnabled);
-            scoreText2.text = "Du fick " + newScore + " pöäng. Du har helt klart tränat på att kasta.";
+            scoreText2.text = "Du fick " + newScore + " poäng. Du har helt klart tränat på att kasta.";
         }
         else if (newScore > 34 && newScore < 45)
         {
             endings[2].SetActive(isActiveAndEnabled);
-            scoreText3.text = "Du fick " + newScore + " pöäng. Du verkar vara ganska bra på att kasta!";
+            scoreText3.text = "Du fick " + newScore + " poäng. Du verkar vara ganska bra på att kasta!";
         }
         else if (newScore > 44)
         {
             endings[3].SetActive(isActiveAndEnabled);
-            scoreText4.text = "Du fick " + newScore + " pöäng. Du är verkligen en mästare på pilkastning!";
+            scoreText4.text = "Du fick " + newScore + " poäng. Du är verkligen en mästare på pilkastning!";
         }
         yield return new WaitForSeconds(0.5f);
         inputManager.GetComponent<InputManager>().isEndingMenuOpen = true;
