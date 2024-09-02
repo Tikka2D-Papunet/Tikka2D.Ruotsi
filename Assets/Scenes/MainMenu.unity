@@ -867,6 +867,18 @@ PrefabInstance:
       propertyPath: cursor
       value: 
       objectReference: {fileID: 1103850085}
+    - target: {fileID: 2356601815760992293, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356601815760992293, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356601815760992293, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2356601815760992297, guid: 7b07cc30339b8794fbf688bca8352ab7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
