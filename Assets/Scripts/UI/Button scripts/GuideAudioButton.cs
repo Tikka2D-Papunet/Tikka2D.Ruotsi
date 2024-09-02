@@ -27,6 +27,8 @@ public class GuideAudioButton : MonoBehaviour, IPointerEnterHandler, IPointerExi
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if (InputManager.Instance != null)
+            InputManager.Instance.canThrow = false;
         if (!guideAudioOn)
             SetButton(listenHoverSprite, hoverSpriteWidth, hoverSpriteHeight);
         else
@@ -54,30 +56,41 @@ public class GuideAudioButton : MonoBehaviour, IPointerEnterHandler, IPointerExi
             SetButton(stopPlaySprite, originalSpriteWidth, originalSpriteHeight);
         }
         cursor.ChangeCursor(cursor.cursorOriginal);
+        if (InputManager.Instance != null)
+            InputManager.Instance.canThrow = true;
     }
     public void OnSelect(BaseEventData eventData)
     {
-        if (!guideAudioOn)
-            SetButton(listenHoverSprite, hoverSpriteWidth, hoverSpriteHeight);
-        else
-            SetButton(stopPlaySpriteHover, hoverSpriteWidth, hoverSpriteHeight);
+        if(InputManager.Instance.isEndingMenuOpen)
+        {
+            if (!guideAudioOn)
+                SetButton(listenHoverSprite, hoverSpriteWidth, hoverSpriteHeight);
+            else
+                SetButton(stopPlaySpriteHover, hoverSpriteWidth, hoverSpriteHeight);
+        }
     }
     public void OnSubmit(BaseEventData eventData)
     {
-        if (buttonImage != null)
+        if (InputManager.Instance.isEndingMenuOpen)
         {
-            if (!guideAudioOn)
-                buttonImage.sprite = listenHoverSprite;
-            else
-                buttonImage.sprite = stopPlaySpriteHover;
+            if (buttonImage != null)
+            {
+                if (!guideAudioOn)
+                    buttonImage.sprite = listenHoverSprite;
+                else
+                    buttonImage.sprite = stopPlaySpriteHover;
+            }
         }
     }
     public void OnDeselect(BaseEventData eventData)
     {
-        if (!guideAudioOn)
-            SetButton(originalSprite, originalSpriteWidth, originalSpriteHeight);
-        else
-            SetButton(stopPlaySprite, originalSpriteWidth, originalSpriteHeight);
+        if (InputManager.Instance.isEndingMenuOpen)
+        {
+            if (!guideAudioOn)
+                SetButton(originalSprite, originalSpriteWidth, originalSpriteHeight);
+            else
+                SetButton(stopPlaySprite, originalSpriteWidth, originalSpriteHeight);
+        }
     }
     public void PlayAudioGuide()
     {

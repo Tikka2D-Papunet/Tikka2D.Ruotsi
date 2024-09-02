@@ -43,14 +43,17 @@ public class CloseGuideScreenButton : MonoBehaviour, IPointerEnterHandler, IPoin
             inputManager.canThrow = true;
         SetButton(originalSprite, originalSpriteWidth, originalSpriteHeight);
         cursor.ChangeCursor(cursor.cursorOriginal);
+
     }
     public void OnSelect(BaseEventData eventData)
     {
-        SetButton(hoverSprite, hoverSpriteWidth, hoverSpriteHeight);
+        if (InputManager.Instance.isEndingMenuOpen)
+            SetButton(hoverSprite, hoverSpriteWidth, hoverSpriteHeight);
     }
     public void OnDeselect(BaseEventData eventData)
     {
-        SetButton(originalSprite, originalSpriteWidth, originalSpriteHeight);
+        if (InputManager.Instance.isEndingMenuOpen)
+            SetButton(originalSprite, originalSpriteWidth, originalSpriteHeight);
     }
     public void SetButton(Sprite sprite, float width, float height)
     {

@@ -63,29 +63,38 @@ public class GuideButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     }
     public void OnSelect(BaseEventData eventData)
     {
-        if (buttonImage != null)
-            buttonImage.sprite = hoverSprite;
-        speechBubble.SetActive(true);
+        if (InputManager.Instance.isEndingMenuOpen)
+        {
+            if (buttonImage != null)
+                buttonImage.sprite = hoverSprite;
+            speechBubble.SetActive(true);
+        }
     }
     public void OnSubmit(BaseEventData eventData)
     {
-        if (madeByScreen != null)
+        if (InputManager.Instance.isEndingMenuOpen)
         {
-            madeByScreen.SetActive(false);
-            if (madeByButton.gameObject.activeSelf)
-                madeByButton.ButtonTextBackToNormal();
+            if (madeByScreen != null)
+            {
+                madeByScreen.SetActive(false);
+                if (madeByButton.gameObject.activeSelf)
+                    madeByButton.ButtonTextBackToNormal();
+            }
+            inputManager.keyboardInput = true;
+            guideScreen.SetActive(true);
+            transparentBG.SetActive(true);
+            guideScreenOpen = true;
+            inputManager.SelectSecondGuideButton();
         }
-        inputManager.keyboardInput = true;
-        guideScreen.SetActive(true);
-        transparentBG.SetActive(true);
-        guideScreenOpen = true;
-        inputManager.SelectSecondGuideButton();
     }
     public void OnDeselect(BaseEventData eventData)
     {
-        if (buttonImage != null)
-            buttonImage.sprite = originalSprite;
-        speechBubble.SetActive(false);
+        if (InputManager.Instance.isEndingMenuOpen)
+        {
+            if (buttonImage != null)
+                buttonImage.sprite = originalSprite;
+            speechBubble.SetActive(false);
+        }
     }
     public void OpenGuideScreen()
     {
@@ -105,5 +114,6 @@ public class GuideButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         guideScreenOpen = false;
         SoundManager.Instance.source.Stop();
         inputManager.keyboardInput = false;
+        inputManager.canThrow = true;
     }
 }

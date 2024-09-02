@@ -57,25 +57,31 @@ public class ListenButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     }
     public void OnSelect(BaseEventData eventData)
     {
-        if (!SoundManager.Instance.isMuted)
+        if(InputManager.Instance.isEndingMenuOpen)
         {
-            buttonImage.sprite = soundOnHoverSprite;
-            SoundOnSpeechBubble();
-        }
-        else
-        {
-            buttonImage.sprite = soundOffHoverSprite;
-            SoundOffSpeechBubble();
+            if (!SoundManager.Instance.isMuted)
+            {
+                buttonImage.sprite = soundOnHoverSprite;
+                SoundOnSpeechBubble();
+            }
+            else
+            {
+                buttonImage.sprite = soundOffHoverSprite;
+                SoundOffSpeechBubble();
+            }
         }
     }
     public void OnDeselect(BaseEventData eventData)
     {
-        if (!SoundManager.Instance.isMuted)
-            buttonImage.sprite = soundOnOriginalSprite;
-        else
-            buttonImage.sprite = soundOffOriginalSprite;
-        soundOffSpeechBubble.SetActive(false);
-        soundOnSpeechBubble.SetActive(false);
+        if(InputManager.Instance.isEndingMenuOpen)
+        {
+            if (!SoundManager.Instance.isMuted)
+                buttonImage.sprite = soundOnOriginalSprite;
+            else
+                buttonImage.sprite = soundOffOriginalSprite;
+            soundOffSpeechBubble.SetActive(false);
+            soundOnSpeechBubble.SetActive(false);
+        }
     }
     public void ToggleSoundOnOrOff()
     {
